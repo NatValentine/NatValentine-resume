@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --mainTextColor-light: #000;
-  --secondaryTextColor-light: rgb(51 51 51);
-  --mainLinkColor-light: #0da2b8;
-  --mainBorderColor-light: rgb(218, 218, 218);
-  --mainBgColor-light: rgb(249, 250, 251);
+  --mainTextColor-light: #000000;
+  --secondaryTextColor-light: #555555;
+  --mainLinkColor-light: #ff8c1b;
+  --mainBorderColor-light: #cccccc;
+  --mainBgColor-light: #f4f4f4;
 
-  --mainTextColor-dark: #fff;
-  --secondaryTextColor-dark: #adb0b1;
-  --mainLinkColor-dark: rgb(30, 190, 214);
-  --mainBorderColor-dark: #2b3031;
-  --mainBgColor-dark: #131415;
+  --mainTextColor-dark: #ffffff;
+  --secondaryTextColor-dark: #cccccc;
+  --mainLinkColor-dark: #ff8c1b;
+  --mainBorderColor-dark: #333333;
+  --mainBgColor-dark: #1b1b1b;
 
   --mainTextColor: var(--mainTextColor-light);
   --secondaryTextColor: var(--secondaryTextColor-light);
@@ -29,6 +29,12 @@
 
 body {
   background-color: var(--mainBgColor);
+  margin: auto;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
 }
 
 p,
@@ -36,125 +42,133 @@ span,
 li {
   color: var(--secondaryTextColor);
   font-size: 1em;
+  font-weight: 300;
 }
 
 a {
   text-decoration: none;
   color: var(--mainLinkColor);
-  font-weight: 500;
+  font-weight: 300;
 }
 
 li {
   line-height: 1.9em;
 }
 
-#container--main {
-  max-width: 700px;
+.container {
+  width: 70%;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 1em 0;
 }
 
-.section--page {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-#wrapper--hero {
+#main-header {
   display: flex;
   align-items: center;
   gap: 4em;
-}
-
-#username {
-  font-size: 3em;
-  line-height: 1em;
-}
-
-#bio,
-a {
-  font-weight: 300;
+  padding-top: 2em;
 }
 
 #profile-pic {
+  display: inline-block;
   border-radius: 50%;
   width: 150px;
   height: 150px;
   object-fit: cover;
 }
 
-#email {
+#intro {
+  display: inline-block;
+  padding-left: 2em;
+}
+
+#project-header {
+  background-color: var(--mainBgColor);
   color: var(--mainTextColor);
 }
 
-#socials--list {
+#navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
   column-gap: 1em;
   flex-wrap: wrap;
 }
 
-#socials--list a {
-  font-size: 0.9em;
-  color: var(--secondaryTextColor);
+#navbar li {
+  display: inline;
+}
+
+#navbar a {
+  color: #ffffff;
+  font-size: 1em;
+  color: var(--mainLinkColor);
+  text-decoration: none;
+  font-size: 1em;
+  padding-right: 1.6em;
   transition: 0.3s;
 }
 
-#socials--list a:hover {
+#navbar a:hover {
   color: var(--mainLinkColor);
 }
 
-#skills--list {
+.section-title {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--mainBorderColor);
+}
+
+#skills-list {
   list-style-type: "✔️ ";
 }
 
-#wrapper--techstack__items {
+#techstack-items {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   font-size: 0.9em;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
 }
 
-.card--techstack {
+.techstack-card {
   border: 1px solid var(--mainBorderColor);
   padding: 0.5em 1em;
   border-radius: 5px;
 }
 
-.card--work-history {
+.history-card {
   border-left: 1px solid var(--mainBorderColor);
-  margin-top: 3em;
   margin-bottom: 3em;
+  margin-left: 3em;
   padding-left: 2em;
 }
 
-.line-break {
-  background-color: var(--mainBorderColor);
-  height: 1px;
-}
-
-.card--academic-history {
-  border-left: 1px solid var(--mainBorderColor);
-  margin-top: 3em;
-  margin-bottom: 3em;
-  padding-left: 2em;
-}
-
-.card--project {
-  padding-top: 1em;
+.project-card {
   padding-bottom: 1em;
-  border-top: 1px solid var(--mainBorderColor);
+  margin-bottom: 2em;
+  margin-left: 3em;
 }
 
-.card--project a {
+.project-card a {
   color: var(--mainTextColor);
   transition: 0.3s;
 }
 
-.card--project a:hover {
+.project-card a:hover {
   color: var(--mainLinkColor);
 }
 
+#main-footer {
+}
+
+#project-footer {
+}
+
 @media (max-width: 600px) {
-  #wrapper--hero {
+  #main-header {
     flex-direction: column;
     gap: 1em;
   }
@@ -164,13 +178,18 @@ a {
     height: 200px;
   }
 
-  .section--page {
+  #intro {
+    padding: 0;
+  }
+
+  .container {
     padding-top: 1em;
     padding-bottom: 1em;
   }
 
-  .card--work-history {
+  .history-card {
     border-left: none;
+    margin-left: 0;
     padding-left: 0;
   }
 }
