@@ -9,17 +9,23 @@
       media="screen"
       href="./styles/style.css"
     />
-    <title>Natalia Gutierrez Daguer</title>
+    <title>Natalia Gutiérrez Daguer</title>
   </head>
   <body>
     <header id="main-header">
       <div class="container">
-        <img id="profile-pic" src="./assets/images/profile_pic.jpg" />
+        <div class="inner-container">
+          <img id="profile-pic" src="./assets/images/profile_pic.jpg" />
 
-        <div id="intro">
-          <h1>Natalia Gutierrez Daguer</h1>
-          <p>Software developer, videogame developer, engineering student.</p>
-          <p>✉️ gtrz.nat@gmail.com</p>
+          <div id="intro">
+            <h1>Natalia Gutiérrez Daguer</h1>
+            <p>
+              Software Developer | Videogame Developer | Engineering Student
+            </p>
+            <a id="mail" href="mailto:gtrz.nat@gmail.com"
+              >✉️ gtrz.nat@gmail.com</a
+            >
+          </div>
         </div>
       </div>
     </header>
@@ -61,34 +67,40 @@
 
     <section>
       <div class="container">
-        <h2 class="section-title">Tech Stack</h2>
-        <div id="techstack-items">
-          <span class="techstack-card">Javascript, NodeJS, C#, SQL</span>
-          <span class="techstack-card">Express, NestJS</span>
-          <span class="techstack-card">Angular, React, NextJS, XState</span>
-          <span class="techstack-card">PostgreSQL, SQLite</span>
-          <span class="techstack-card">Unity, Unreal Engine</span>
-          <span class="techstack-card">GitHub, GitLab</span>
-          <span class="techstack-card">Adobe Creative Suite, Blender3D</span>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
         <h2 class="section-title">Work History</h2>
         <div class="history-card">
-          <strong>VIDEO GAME DEVELOPER | INDEPENDENT CONTRACTOR</strong>
+          <strong>FULL-STACK DEVELOPER | INDEPENDENT CONTRACTOR</strong>
+          <p>2023 – Present</p>
+          <p>Freelance developer for various projects.</p>
+          <div id="techstack-items">
+            <span class="techstack-card">TypeScript</span>
+            <span class="techstack-card">NodeJS</span>
+            <span class="techstack-card">NestJS</span>
+            <span class="techstack-card">Angular</span>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="history-card">
+          <strong>VIDEO GAME DEVELOPER | SELF-EMPLOYED</strong>
           <p>2019 – Present</p>
           <p>
-            Worked on own projects and as a contractor occupying many different
-            roles as an all-rounder.
+            Worked on own projects occupying many different roles as an
+            all-rounder.
           </p>
           <ul>
-            <li>Videogame design, development and publishing on itch.io</li>
+            <li>Videogame design, development and publishing</li>
             <li>Graphical asset packs creation</li>
             <li>Testing</li>
           </ul>
+          <div id="techstack-items">
+            <span class="techstack-card">Unity</span>
+            <span class="techstack-card">C#</span>
+            <span class="techstack-card">Adobe Creative Suite</span>
+            <span class="techstack-card">Itch.io</span>
+            <span class="techstack-card">Play Store</span>
+          </div>
         </div>
 
         <br />
@@ -100,11 +112,14 @@
             Worked on the development, implementation and maintenance of a
             warehouse management system (WMS) for a local retailer.
           </p>
-          <ul>
-            <li>Tech stack: NodeJS, Angular, React, PostgreSQL</li>
-            <li>REST and SOAP APIs</li>
-            <li>Agile methodologies (Scrum & Kanban)</li>
-          </ul>
+          <div id="techstack-items">
+            <span class="techstack-card">NodeJS</span>
+            <span class="techstack-card">Express, NestJS</span>
+            <span class="techstack-card">Angular, React</span>
+            <span class="techstack-card">API REST, API SOAP</span>
+            <span class="techstack-card">SQL, Sequelize, PostgreSQL</span>
+            <span class="techstack-card">Scrum, Kanban</span>
+          </div>
         </div>
 
         <br />
@@ -118,10 +133,16 @@
           </p>
           <ul>
             <li>Integration of Lotus Notes with SQL databases and SAP</li>
-            <li>Consuming SOAP APIs</li>
             <li>Manual testing of applications</li>
             <li>Document processes and on-board new team members</li>
           </ul>
+          <div id="techstack-items">
+            <span class="techstack-card">LotusScript</span>
+            <span class="techstack-card">Formula Language</span>
+            <span class="techstack-card">JavaScript</span>
+            <span class="techstack-card">WSDL, SOAP</span>
+            <span class="techstack-card">SQL</span>
+          </div>
         </div>
       </div>
     </section>
@@ -133,6 +154,15 @@
         <div class="history-card">
           <strong>INFORMATIONAL SYSTEMS ENGINEERING</strong>
           <p>Universidad Tecnológica Nacional | In progress</p>
+          <div id="techstack-items">
+            <span class="techstack-card">Data Structures, Algorithms</span>
+            <span class="techstack-card">Structured Programming, C</span>
+            <span class="techstack-card">Functional Programming, Haskell</span>
+            <span class="techstack-card">Logical Programming, Prolog</span>
+            <span class="techstack-card">Object Oriented Programming</span>
+            <span class="techstack-card">System Design</span>
+            <span class="techstack-card">Project Management</span>
+          </div>
         </div>
 
         <br />
@@ -140,6 +170,13 @@
         <div class="history-card">
           <strong>VIDEOGAME DEVELOPMENT ASSOCIATE DEGREE</strong>
           <p>Universidad Abierta Interamericana | 2019</p>
+          <div id="techstack-items">
+            <span class="techstack-card">Unity, C#</span>
+            <span class="techstack-card">Adobe Creative Suite</span>
+            <span class="techstack-card">Blender3D</span>
+            <span class="techstack-card">Project Management</span>
+            <span class="techstack-card">Marketing</span>
+          </div>
         </div>
       </div>
     </section>
@@ -148,8 +185,15 @@
       <div class="container">
         <h2 class="section-title">Projects & Accomplishments</h2>
         <div class="project-card">
-          <a href="pong.html"
-            ><span>🏆 </span>Pong - Local multiplayer game (Unity | C#)</a
+          <h4><span>🏆 </span>Pong - Local multiplayer game (Unity | C#)</h4>
+          <iframe
+            frameborder="0"
+            src="https://itch.io/embed/878256?link_color=ff8c1b"
+            width="552"
+            height="167"
+            ><a href="https://natvalentine.itch.io/pong"
+              >Pong by Nat Valentine</a
+            ></iframe
           >
         </div>
       </div>

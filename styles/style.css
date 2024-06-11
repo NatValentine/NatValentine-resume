@@ -62,10 +62,15 @@ li {
   padding: 1em 0;
 }
 
+.inner-container {
+  margin: 0 auto;
+  overflow: visible;
+  padding: 1em 0;
+  width: 80%;
+}
+
 #main-header {
-  display: flex;
-  align-items: center;
-  gap: 4em;
+  margin: 0 auto;
   padding-top: 2em;
 }
 
@@ -80,6 +85,16 @@ li {
 #intro {
   display: inline-block;
   padding-left: 2em;
+}
+
+#mail {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+#mail:hover {
+  color: var(--mainLinkColor);
 }
 
 #project-header {
@@ -112,7 +127,7 @@ li {
 }
 
 #navbar a:hover {
-  color: var(--mainLinkColor);
+  color: var(--mainTextColor);
 }
 
 .section-title {
